@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.erro {
+    color: red;
+}
+
+.succes {
+    color: green;
+}
+
+img {
+    width: 40px;
+}
+
+.contact-contents {
+    background-color: bisque;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#listContact {
+    display: flex;
+    justify-content: center;
+}

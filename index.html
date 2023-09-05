@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container-inpt">
-        <input type="text" id="name">
-        <input type="number" id="landline">
-        <input type="number" id="phone">
-        <input type="text" id="imgLink">
+        <input type="text" id="name" placeholder="João Cleber">
+        <input type="number" id="landline" max="11" placeholder="11998738123" required>
+        <input type="number" id="phone" maxlength="11" placeholder="11998738123" required>
+        <input type="text" id="imgLink" placeholder="Imagem">
         <input type="date" id="date">
-        <input type="text" id="email">
-        <input type="number" id="cep">
-        <input type="text" id="city">
-        <input type="text" id="insta">
-        <input type="text" id="gitHub">
+        <input type="text" id="email" placeholder="joaoCleber@gmail.com">
+        <input type="number" id="cep" maxlength="8" placeholder="Cep">
+        <input type="text" id="city" placeholder="Valinhos">
+        <input type="text" id="insta" placeholder="Instagram">
+        <input type="text" id="gitHub" placeholder="GitHub">
         <div id="msg"></div>
         <button onclick="createContact()">Adicionar Contato</button>
     </div>
+    <div id="listContact">
+        <div class="contact-contents" id="contact-contents"></div>
+    </div>
+    <aside id="moreInfos"></aside>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
